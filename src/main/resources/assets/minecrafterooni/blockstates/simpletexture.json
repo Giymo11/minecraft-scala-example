@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecrafterooni:simpletexture"
+  },
+  "variants": {
+    "normal": [
+      { "model": "minecrafterooni:simpletexture" },
+      { "model": "minecrafterooni:simpletexture", "y": 90 },
+      { "model": "minecrafterooni:simpletexture", "y": 180 },
+      { "model": "minecrafterooni:simpletexture", "y": 270 }
+    ],
+    "inventory": [{}]
+  }
+}

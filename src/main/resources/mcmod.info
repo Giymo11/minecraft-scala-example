@@ -1,0 +1,15 @@
+[
+{
+  "modid": "rooni",
+  "name": "Minecrafterooni",
+  "description": "Learning how to scala.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Giymo11"],
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

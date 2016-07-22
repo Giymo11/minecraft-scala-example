@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up": "minecrafterooni:blocks/simpletexture",
+    "down": "blocks/dirt",
+    "east": "blocks/cobblestone",
+    "west": "blocks/slime",
+    "north": "blocks/sand",
+    "south": "blocks/log_oak"
+  }
+}
