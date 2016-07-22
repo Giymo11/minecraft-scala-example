@@ -5,7 +5,7 @@ import net.minecraft.init.Blocks
 import net.minecraft.item.ItemBlock
 import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
 import net.minecraftforge.fml.common.registry.GameRegistry
-import rip.hansolo.minecrafterooni.Minecrafterooni
+import rip.hansolo.minecrafterooni.{Minecrafterooni, Reference}
 import rip.hansolo.minecrafterooni.blocks.{SidedTexture, SimpleTexture}
 
 /**
@@ -34,8 +34,9 @@ abstract class CommonProxy {
   def addToRender(item: ItemBlock): Unit
 
   def init(event: FMLInitializationEvent): Unit = {
-    println(s"*Scala* DIRT BLOCK >> ${Blocks.DIRT.getUnlocalizedName}")
+    println("Hello from " + Reference.modid)
   }
+
   def postInit(event: FMLPostInitializationEvent): Unit = {
 
   }

@@ -17,13 +17,7 @@ class ClientProxy extends CommonProxy {
 
   val blockItems: mutable.ListBuffer[ItemBlock] = ListBuffer()
 
-  lazy val creativeTab = new CreativeTabs(Reference.modid) {
-    override def getTabIconItem: Item = Item.REGISTRY.getObject(Minecrafterooni.ResourceLocation(Reference.BlockIds.sidedTexture))
-  }
-
-  override def addToRender(item: ItemBlock): Unit = {
-    blockItems.append(item)
-  }
+  override def addToRender(item: ItemBlock): Unit = blockItems.append(item)
 
   override def preInit(event: FMLPreInitializationEvent): Unit = {
     super.preInit(event)
@@ -32,6 +26,11 @@ class ClientProxy extends CommonProxy {
       renderBlockItem(item)
       item.block.setCreativeTab(creativeTab)
     }
+  }
+
+  lazy val creativeTab = new CreativeTabs(Reference.modid) {
+    override def getTabIconItem: Item =
+      Item.REGISTRY.getObject(Minecrafterooni.ResourceLocation(Reference.BlockIds.sidedTexture))
   }
 
   def renderBlockItem(item: Item, metadata: Int = 0): Unit = {
